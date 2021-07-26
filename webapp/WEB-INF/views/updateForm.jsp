@@ -13,10 +13,10 @@
 	<p>수정화면 입니다. 아래 항목을 수정하고 "수정" 버튼을 클릭하세요</p>
 
 	<form action="${pageContext.request.contextPath}/update" method="get">
-		이름(name): <input type="text" name="name" value="${pVo.name }"> <br> 핸드폰(hp): <input
-			type="text" name="hp" value="${pVo.hp }"
-		> <br> 회사(company): <input type="text" name="company" value="${pVo.company }">
-		<br> <input type="hidden" name="personId" value="${pVo.personId }">
+		이름(name): <input type="text" name="name" value="${personVo.name }"> <br> 핸드폰(hp): <input
+			type="text" name="hp" value="${personVo.hp }"
+		> <br> 회사(company): <input type="text" name="company" value="${personVo.company }">
+		<br> <input type="hidden" name="personId" value="${personVo.personId }">
 		<button type="submit">수정</button>
 	</form>
 </body>
